@@ -16,14 +16,13 @@ class User_model extends CI_Model {
     return $r;
   }
 
-  //function all($busqueda)
-  //{
+  function all($user)
+  {
 
-    //$query = $this->db->get_where('musicos', array('instrumentos_toca' => $busqueda));
-   //$query = $this->db->get('musicos');
+   $query = $this->db->get_where('rides', array('user' => $user));
 
-    //return $query->result_object();
+    return $query->result_object();
     
-  //}
+  }
 
 }

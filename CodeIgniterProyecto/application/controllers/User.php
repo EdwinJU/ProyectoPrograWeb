@@ -4,9 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class User extends CI_Controller
 {
     
-    function home(){
+    function dashboard(){
 
-        $this->load->view('user/home');
+        $this->load->view('user/dashboard');
     }
 
 
@@ -33,23 +33,24 @@ class User extends CI_Controller
 		$r = $this->User_model->authenticate($username, $password);
 		if (count($r) > 0 ) {
 			$user = $r[0];
-			redirect('home');
+            echo "Welcome {$user->username}";
+			redirect('dashboard');
 		} else {
 			echo "Invalid user name or password";
 		}
 	}
 
-	//public function list() {
-      // $busqueda=$this->input->post('busqueda');
-       //$users = $this->User_model->all($busqueda);
+	public function list() {
+       $userlog=$this->input->post('username');
+       $users = $this->User_model->all($userlog);
 
         
-        //$data['musicos'] = $users;
-        //$data['title'] = 'List of Users';
+        $data['rides'] = $users;
+        $data['title'] = 'List of your rides';
         
-        //$this->load->view('user/list', $data);
+        $this->load->view('user/list', $data);
 
-	//}
+	}
 
 
 
