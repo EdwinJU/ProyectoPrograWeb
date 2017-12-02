@@ -59,6 +59,7 @@
 				</div>
 			</hgroup>
 				<form action=<?php echo site_url('/user/authenticate');?> method="POST" role="form">
+					<form action=<?php echo site_url('/user/saveRide');?> method="POST" role="form">
 					
 			</header>
 				<br>
@@ -119,6 +120,7 @@
 					</div>
 				</div>
 			</form>
+		</form>
 			
 			
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

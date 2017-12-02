@@ -15,6 +15,11 @@ class User_model extends CI_Model {
     $r = $this->db->insert('users', $user);
     return $r;
   }
+  function saveRide($ride)
+  {
+    $r = $this->db->insert('rides', $ride);
+    return $r;
+  }
 
   function all($user)
   {
