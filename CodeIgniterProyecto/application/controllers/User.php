@@ -21,9 +21,9 @@ class User extends CI_Controller
         $this->load->view('user/login');
     }
 
-    public function register()
+    public function register_user()
     {
-        $this->load->view('user/register');
+        $this->load->view('user/register_user');
 	}
 	
 	public function authenticate() {

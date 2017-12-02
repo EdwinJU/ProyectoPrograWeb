@@ -37,7 +37,7 @@
 			<div class="container">
 
 				
-				<img src="C:\Users\Alfredo\Documents\GitHub\ProyectoPrograWeb\ProyectoPrograWeb\taxi.png">
+				<img src="C:\xampp\htdocs\ProyectoPrograWeb\taxi.png">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -60,7 +60,7 @@
 				</nav>
 				<form action=<?php echo site_url('/user/save');?> method="POST" role="form">
 				<div class="container">
-					<div class="first_name">
+					<div class="first">
 						
 						<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
 							
@@ -91,7 +91,7 @@
 		<br>
 		<br>
 		<div class="container">
-			<div class="firstname">
+			<div class="first_name">
 				
 				<div class="col-xs- col-sm- col-md- col-lg-12">
 					
@@ -107,7 +107,7 @@
 			<div class="first_name">
 				<div class="col-xs-12 col-sm-6 col-md-12">
 					
-					<input type="text" placeholder="Introduce your Firstname" id="first_name">
+					<input type="text" name="first_name" placeholder="Introduce your Firstname" id="first_name">
 					
 				</div>
 				
@@ -115,7 +115,7 @@
 		</div>
 		<br>
 		<div class="container">
-			<div class="LastName">
+			<div class="last_name">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<p>
 						<b>LastName</b>
@@ -127,13 +127,13 @@
 			<div class="last_name">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					
-					<input type="text" placeholder="Introduce your Lastname" id="last_name">
+					<input type="text" name="last_name" placeholder="Introduce your Lastname" id="last_name">
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="Phone">
+			<div class="phone">
 				
 				<div class="col-xs- col-sm- col-md- col-lg-12">
 					
@@ -149,14 +149,14 @@
 			<div class="phone">
 				<div class="col-xs-12 col-sm-6 col-md-12">
 					
-					<input type="text" placeholder="(XXX)XXX-XXXX" id="phone">
+					<input type="text" name="phone" placeholder="(XXX)XXX-XXXX" id="phone">
 					
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="Username">
+			<div class="username">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<p>
 						<b>Username</b>
@@ -168,16 +168,16 @@
 			<div class="user_name">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					
-					<input type="text" name="user_name" value="" placeholder="Type your username" class="required"  id="user_name" />
+					<input type="text" name="username" value="" placeholder="Type your username" class="required"  id="username" />
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="Password">
+			<div class="password">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<p>
-						<b>Password</b>
+						<b>password</b>
 					</p>
 				</div>
 			</div>

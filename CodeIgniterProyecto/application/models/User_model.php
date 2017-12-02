@@ -12,7 +12,7 @@ class User_model extends CI_Model {
   function save($user)
   {
 		$user['password'] = md5($user['password']);
-    $r = $this->db->insert('rides', $user);
+    $r = $this->db->insert('users', $user);
     return $r;
   }
 
