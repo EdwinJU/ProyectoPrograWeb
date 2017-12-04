@@ -39,6 +39,8 @@ class User extends CI_Controller
 		if (count($r) > 0 ) {
 			$user = $r[0];
             echo "Welcome {$user->username}";
+            $s_user=array('s_username'=>$username);
+            $this->session->set_userdata($s_user);
 			redirect('register_ride');
 		} else {
 			echo "Invalid user name or password";
@@ -94,7 +96,7 @@ class User extends CI_Controller
     public function saveRide()
     {
         // get the params
-        $user_create=$this->input->post('username');
+        $user_create=$this->session->userdata('s_username');
         $name = $this->input->post('name');
         $start = $this->input->post('start');
         $end = $this->input->post('end');
