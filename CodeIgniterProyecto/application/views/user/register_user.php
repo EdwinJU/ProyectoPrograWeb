@@ -194,7 +194,7 @@
 				<div class="link">
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<p>
-							Already an user <a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/autenticacion.html"target="_blank":>Login here</a>
+							Already an user <a href="<?php echo site_url('login');?>">Login here</a>
 							
 							
 						</p>

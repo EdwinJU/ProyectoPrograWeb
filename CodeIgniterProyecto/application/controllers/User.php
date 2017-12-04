@@ -29,6 +29,10 @@ class User extends CI_Controller
     {
         $this->load->view('user/register_ride');
     }
+     public function Prueba()
+    {
+        $this->load->view('user/edit_ride');
+    }
 	
 	public function authenticate() {
 
@@ -130,4 +134,45 @@ class User extends CI_Controller
             redirect('user/register');
         }
     }
+
+    public function editRide()
+    {
+        // get the params
+        $user_create=$this->session->userdata('s_username');
+        $name = $this->input->post('name');
+        $start = $this->input->post('start');
+        $end = $this->input->post('end');
+        $descripcion = $this->input->post('descripcion');
+        $departure = $this->input->post('departure');
+        $estimate = $this->input->post('estimate');
+        $days = $this->input->post('days');
+        
+
+
+        $rideE = array(
+            'user_create' => $user_create,
+            'name' => $name,
+            'start' => $start,
+            'end' => $end,
+            'descripcion' => $descripcion,
+            'departure' => $departure,
+            'estimate' => $estimate,
+            'days'=> $days
+
+        );
+        // call the model to save
+        $re = $this->User_model->editRide($name,$rideE);
+        
+        // redirect
+        if ($re) {
+            // $this->session->set_flashdata('message', 'User saved');
+            redirect('dashboard');
+        } else {
+            // $this->session->set_flashdata('message', 'There was an error saving the user');
+            redirect('user/register');
+        }
+    }
+
+
+   
 }

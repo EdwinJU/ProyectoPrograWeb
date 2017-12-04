@@ -45,7 +45,7 @@
 							<li class="active"><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/index.html"target="_blank":>Home</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html"target="_blank":>DashBoard</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/CrearRide.html"target="_blank":>Create Ride</a></li>
-							<li><a href="<?php echo site_url('Prueba');?>">Edit Ride</a></li>
+							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/Editride.html"target="_blank":>Edit Ride</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/settings.html"target="_blank":>Settings</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/Ayuda.html"target="_blank":>help</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/AcercaDe.html"target="_blank":>About Us</a></li>
@@ -56,12 +56,12 @@
 					</div>
 				</nav>
 
-				<form action=<?php echo site_url('/user/saveRide');?> method="POST" role="form">
+				<form action=<?php echo site_url('/user/editRide');?> method="POST" role="form">
 
 				<div class="container">
 					
 					<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-						<h1><b>Create Rides</b></h1>
+						<h1><b>Edit Rides</b></h1>
 					</div>
 					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 						<table class="table">

@@ -53,6 +53,8 @@ $route['register_user']='user/register_user';
 $route['login']='user/login';
 $route['dashboard']='user/dashboard';
 $route['register_ride']='user/register_ride';
+$route['Prueba']='user/Prueba';
+
 
 $route['default_controller'] = 'user/login';
 $route['404_override'] = '';

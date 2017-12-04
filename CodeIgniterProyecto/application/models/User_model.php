@@ -21,13 +21,24 @@ class User_model extends CI_Model {
     return $r;
   }
 
-  function all($user)
+  function editRide($name,$rideE)
   {
-
-   $query = $this->db->get_where('rides', array('user' => $user));
-
-    return $query->result_object();
+    $this->db->where(array('name' => $name));
+    $this->db->update('rides', $rideE);
     
+
+
+   // $r = $this->db->update_where('rides', array('name' =>$rideE));
+    return $r;
   }
+
+  //function all($user)
+  //{
+
+   //$query = $this->db->get_where('rides', array('user' => $user));
+
+    ///return $query->result_object();
+    
+  //}
 
 }
