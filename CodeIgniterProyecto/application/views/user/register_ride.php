@@ -43,7 +43,7 @@
 						</div>
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/index.html"target="_blank":>Home</a></li>
-							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html"target="_blank":>DashBoard</a></li>
+							<li><a href="<?php echo site_url('dashboard');?>">DashBoard</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/CrearRide.html"target="_blank":>Create Ride</a></li>
 							<li><a href="<?php echo site_url('Prueba');?>">Edit Ride</a></li>
 							<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/settings.html"target="_blank":>Settings</a></li>

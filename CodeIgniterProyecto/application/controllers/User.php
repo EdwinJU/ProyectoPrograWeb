@@ -13,7 +13,7 @@ class User extends CI_Controller
 
    public function index(){
 
-        $this->load->view('user/home');
+        $this->load->view('user/dashboard');
     }
 
     public function login()
@@ -52,14 +52,11 @@ class User extends CI_Controller
 	}
 
 	public function list() {
-       $userlog=$this->input->post('username');
-       $users = $this->User_model->all($userlog);
+        $user_create=$this->session->userdata('s_username');
+       $rides = $this->User_model->all($user_create);
 
-        
-        $data['rides'] = $users;
-        $data['title'] = 'List of your rides';
-        
-        $this->load->view('user/list', $data);
+        $this->load->view('user/dashboard');
+
 
 	}
 
@@ -93,7 +90,7 @@ class User extends CI_Controller
             redirect('login');
         } else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/register');
+            redirect('user/register_user');
         }
     }
 
@@ -131,7 +128,7 @@ class User extends CI_Controller
             redirect('login');
         } else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/register');
+            redirect('user/register_ride');
         }
     }
 
@@ -161,15 +158,15 @@ class User extends CI_Controller
 
         );
         // call the model to save
-        $re = $this->User_model->editRide($name,$rideE);
+        $r=$this->User_model->editRide($name,$rideE);
         
         // redirect
-        if ($re) {
-            // $this->session->set_flashdata('message', 'User saved');
-            redirect('dashboard');
-        } else {
+        if($r) {
+
+            redirect('user/dashboard');
+        }else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/register');
+            redirect('user/dashboard');
         }
     }
 

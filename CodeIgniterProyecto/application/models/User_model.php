@@ -26,19 +26,16 @@ class User_model extends CI_Model {
     $this->db->where(array('name' => $name));
     $this->db->update('rides', $rideE);
     
-
-
-   // $r = $this->db->update_where('rides', array('name' =>$rideE));
     return $r;
   }
 
-  //function all($user)
-  //{
+  function all($user_create)
+  {
 
-   //$query = $this->db->get_where('rides', array('user' => $user));
+   $query = $this->db->get_where('rides', array('user_create' => $user_create));
 
-    ///return $query->result_object();
+    return $query->result_object();
     
-  //}
+  }
 
 }
