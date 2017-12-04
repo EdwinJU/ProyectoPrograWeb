@@ -104,7 +104,7 @@
 					<div class="link">
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<p>
-								Not an user <a href="file:///C:/xampp/htdocs/ProyectoPrograWeb/CodeIgniterProyecto/application/views/user/register_user.php">Register here</a>
+								Not an user <a href="<?php echo site_url('register_user');?>">Register here</a>
 																
 							</p>
 						</div>
