@@ -55,9 +55,6 @@ class User extends CI_Controller
         $user_create=$this->session->userdata('s_username');
        $rides = $this->User_model->all($user_create);
 
-        $this->load->view('user/dashboard');
-
-
 	}
 
 
