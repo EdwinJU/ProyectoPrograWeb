@@ -31,7 +31,6 @@ class User_model extends CI_Model {
 
   function all($user_create)
   {
-
    $query = $this->db->get_where('rides', array('user_create' => $user_create));
 
     return $query->result_object();

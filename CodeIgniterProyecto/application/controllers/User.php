@@ -4,17 +4,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class User extends CI_Controller
 {
     
-    function dashboard(){
+  //public  function dashboard(){
 
-        $this->load->view('user/dashboard');
-    }
+    //    $this->load->view('user/dashboard');
+    //}
 
 
 
-   public function index(){
+   //public function index(){
 
-        $this->load->view('user/dashboard');
-    }
+     //   $this->load->view('user/dashboard');
+    //}
 
     public function login()
     {
@@ -54,6 +54,9 @@ class User extends CI_Controller
 	public function list() {
         $user_create=$this->session->userdata('s_username');
        $rides = $this->User_model->all($user_create);
+
+       $data['rides'] = $rides;
+       $this->load->view('user/dashboard', $data);
 
 	}
 

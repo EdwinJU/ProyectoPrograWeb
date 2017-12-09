@@ -93,11 +93,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					foreach ($rides as $index => $ride) { ?>
 					<tr>
 
-                        <td><?php echo $ride->nombre; ?></td>
+                        <td><?php echo $ride->name; ?></td>
 						<td><?php echo $ride->start; ?></td>
 						<td><?php echo $ride->end; ?></td>
 						<td><?php echo $ride->descripcion; ?></td>
-						<td><?php echo $ride->depature; ?></td>
+						<td><?php echo $ride->departure; ?></td>
 						<td><?php echo $ride->estimate; ?></td>
 						<td><?php echo $ride->days; ?></td>
 					</tr>	
