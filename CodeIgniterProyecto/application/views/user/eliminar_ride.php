@@ -57,21 +57,12 @@
 					</div>
 				</nav>
 
-				<form action=<?php echo site_url('/user/editRide');?> method="POST" role="form">
+				<form action=<?php echo site_url('/user/eliminarRide');?> method="POST" role="form">
 
 				<div class="container">
 					
 					<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-						<h1><b>Edit Rides</b></h1>
-					</div>
-					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-						<table class="table">
-							
-							<tbody id="user_table">
-								
-							</tbody>
-						</table>
-						
+						<h1><b>Delete Rides</b></h1>
 					</div>
 					
 				</div>
@@ -100,84 +91,16 @@
 			</div>
 			<br>
 			
-			
-			
 			<br>
-			<div class="container">
-				
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					
-					<p>
-						<b>Start From</b>
-					</p>
-					<input type="text" name="start" placeholder="Introduce the Start From" id="start">
-				</div>
-				<div class="End">
-					<div class="col-xs-6 col-sm-6 col-md-6">
-						<p>
-							<b>End</b>
-						</p>
-						<input type="text" name="end" placeholder="Introduce the End" id="end">
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="container">
-				
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					
-					<div class="form-group">
-						<label for="comment">Descripcion:</label>
-						<textarea class="form-control" name="descripcion" rows="5" id="comment"></textarea>
-					</div>
-				</div>
-			</div>
-			
-			<div class="container">
-				<h2><b>When</b></h2>
-				
-				<div class="col-xs- col-sm- col-md- col-lg-6">
-					
-					<p>
-						<b>Departure</b>
-					</p>
-					<input type="text" name="departure" placeholder="Introduce an hour" id="departure">
-					<p>
-						<b>Estimate Arrival</b>
-					</p>
-					<input type="text" name="estimate" placeholder="Introduce an hour" id="estimate">
-					
-				</div>
-				
-				
-				
-				<div class="col-xs- col-sm- col-md- col-lg-6">
-					<p>
-						<b>Days</b>
-					</p>
-					<input type="text" name="days" placeholder="Introduce the days" id="days">
-					
-					
-					
-				</div>
-			</div>
 			<br>
 			<br>
 			<div class="container">
 				
 				<div class="col-xs-12 col-sm-6 col-md-6	">
-					<button type="submit" class="btn btn-primary" id="btnSaveR">Save</button>
+					<button type="submit" class="btn btn-primary" id="btnSaveR">Eliminar</button>
 					
 				</div>
 				<br>
-				<div class="link">
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<p>
-							<a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html">Cancel</a>
-							
-						</p>
-					</div>
-				</div>
 			</div>
 			<br>
 			

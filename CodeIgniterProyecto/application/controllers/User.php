@@ -33,6 +33,22 @@ class User extends CI_Controller
     {
         $this->load->view('user/edit_ride');
     }
+    public function Eliminar()
+    {
+        $this->load->view('user/eliminar_ride');
+    }
+    public function healp()
+    {
+        $this->load->view('user/healp');
+    }
+    public function about()
+    {
+        $this->load->view('user/about');
+    }
+     public function contact()
+    {
+        $this->load->view('user/contact');
+    }
 	
 	public function authenticate() {
 
@@ -59,6 +75,16 @@ class User extends CI_Controller
        $this->load->view('user/dashboard', $data);
 
 	}
+
+        public function listHome() {
+        $from = $this->input->post('from');
+        $to = $this->input->post('to');
+       $rides = $this->User_model->allHome($from,$to);
+
+       $data['rides'] = $rides;
+       $this->load->view('user/Home', $data);
+
+    }
 
 
 
@@ -159,6 +185,24 @@ class User extends CI_Controller
         );
         // call the model to save
         $r=$this->User_model->editRide($name,$rideE);
+        
+        // redirect
+        if($r) {
+
+            redirect('user/dashboard');
+        }else {
+            // $this->session->set_flashdata('message', 'There was an error saving the user');
+            redirect('user/dashboard');
+        }
+    }
+
+     public function eliminarRide()
+    {
+        // get the params
+        $name = $this->input->post('name');
+       
+        // call the model to save
+        $r=$this->User_model->eliminarRide($name);
         
         // redirect
         if($r) {

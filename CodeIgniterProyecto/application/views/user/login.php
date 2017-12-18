@@ -41,16 +41,17 @@
 								<a class="navbar-brand" href="#">TicoRide.com</a>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/index.html"target="_blank":>Home</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html"target="_blank":>DashBoard</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/CrearRide.html"target="_blank":>Create Ride</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/Editride.html"target="_blank":>Edit Ride</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/settings.html"target="_blank":>Settings</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/Ayuda.html"target="_blank":>help</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/AcercaDe.html"target="_blank":>About Us</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/Contacto.html"target="_blank":>Contact</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/autenticacion.html"target="_blank":>Login</a></li>
-								<li><a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/registrouser.html"target="_blank":>Sign in</a></li>
+								<li><a href="<?php echo site_url('useer');?>">Home</a></li>
+							<li><a href="<?php echo site_url('user');?>">DashBoard</a></li>
+							<li><a href="<?php echo site_url('register_ride');?>">Register Ride</a></li>
+							<li><a href="<?php echo site_url('Prueba');?>">Edit Ride</a></li>
+							<li><a href="<?php echo site_url('Eliminar');?>">Eliminar Ride</a></li>
+							<li><a href="<?php echo site_url('healp');?>">Help</a></li>
+							<li><a href="<?php echo site_url('about');?>">About Us</a></li>
+							<li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+							<li><a href="<?php echo site_url('Settings');?>">Settings</a></li>
+							<li><a href="<?php echo site_url('login');?>">Login</a></li>
+							<li><a href="<?php echo site_url('register_user');?>">Sign in</a></li>
 								
 							</ul>
 						</div>

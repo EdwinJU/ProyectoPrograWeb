@@ -1,0 +1,42 @@
+header{
+	background: #2c3e50;
+	color: #fff;
+}
+.main{
+	background: #f2f2f2;
+
+}
+
+img{  
+  display:flex;
+  margin:0 auto;
+}
+h1{
+
+display:flex;
+  margin:0 auto;	
+}
+.from{
+	width: 23%;
+    float: left;
+    
+}
+.to{
+	width: 23%;
+    float: left;
+}
+
+.txtFrom{
+	width: 	5%;
+    float: left;
+}
+.txtTo{
+	width: 5%;
+    float: left;
+}
+
+.boton{
+	width: 5%;
+    float: left;
+}
+

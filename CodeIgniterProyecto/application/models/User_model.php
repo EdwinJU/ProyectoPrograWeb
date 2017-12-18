@@ -28,10 +28,24 @@ class User_model extends CI_Model {
     
     return $r;
   }
+    function eliminarRide($name)
+  {
+    $this->db->where(array('name' => $name));
+    $this->db->delete('rides');
+    
+    return $r;
+  }
 
   function all($user_create)
   {
    $query = $this->db->get_where('rides', array('user_create' => $user_create));
+
+    return $query->result_object();
+    
+  }
+    function allHome($from,$to)
+  {
+   $query = $this->db->get_where('rides', array('start' => $from, 'end' => $to));
 
     return $query->result_object();
     
