@@ -28,6 +28,13 @@ class User_model extends CI_Model {
     
     return $r;
   }
+   function editUser($user_create,$userE)
+  {
+    $this->db->where(array('username' => $user_create));
+    $this->db->update('users', $userE);
+    
+    return $r;
+  }
     function eliminarRide($name)
   {
     $this->db->where(array('name' => $name));

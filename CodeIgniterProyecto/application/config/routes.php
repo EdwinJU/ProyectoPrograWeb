@@ -62,6 +62,7 @@ $route['Home']='user/Home';
 $route['healp']='user/healp';
 $route['about']='user/about';
 $route['contact']='user/contact';
+$route['Settings']='user/settings';
 
 
 

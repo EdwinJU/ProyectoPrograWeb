@@ -49,6 +49,11 @@ class User extends CI_Controller
     {
         $this->load->view('user/contact');
     }
+     public function settings()
+    {
+        $this->load->view('user/settings');
+    }
+    
 	
 	public function authenticate() {
 
@@ -203,6 +208,32 @@ class User extends CI_Controller
        
         // call the model to save
         $r=$this->User_model->eliminarRide($name);
+        
+        // redirect
+        if($r) {
+
+            redirect('user/dashboard');
+        }else {
+            // $this->session->set_flashdata('message', 'There was an error saving the user');
+            redirect('user/dashboard');
+        }
+    }
+    public function editUser()
+    {
+        // get the params
+        $user_create=$this->session->userdata('s_username');
+        $fullname = $this->input->post('fullname');
+        $speed = $this->input->post('speed');
+        $about = $this->input->post('about');
+
+        $userE = array(
+            'full_name' => $fullname,
+            'speed_average' => $speed,
+            'about_me' => $about
+
+        );
+        // call the model to save
+        $r=$this->User_model->editUser($user_create,$userE);
         
         // redirect
         if($r) {
