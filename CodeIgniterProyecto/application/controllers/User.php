@@ -194,10 +194,10 @@ class User extends CI_Controller
         // redirect
         if($r) {
 
-            redirect('user/dashboard');
+            redirect('user');
         }else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/dashboard');
+            redirect('user');
         }
     }
 
@@ -212,10 +212,10 @@ class User extends CI_Controller
         // redirect
         if($r) {
 
-            redirect('user/dashboard');
+            redirect('user');
         }else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/dashboard');
+            redirect('user');
         }
     }
     public function editUser()
@@ -238,10 +238,10 @@ class User extends CI_Controller
         // redirect
         if($r) {
 
-            redirect('user/dashboard');
+            redirect('user');
         }else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
-            redirect('user/dashboard');
+            redirect('user');
         }
     }
 
