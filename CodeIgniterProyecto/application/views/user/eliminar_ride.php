@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 		<style type="text/css">
 		header{
 		background: #2c3e50;
@@ -56,57 +55,63 @@
 						</ul>
 					</div>
 				</nav>
-
 				<form action=<?php echo site_url('/user/eliminarRide');?> method="POST" role="form">
-
-				<div class="container">
-					
-					<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-						<h1><b>Delete Rides</b></h1>
+					<div class="container">
+						
+						<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+							<h1><b>Delete Rides</b></h1>
+						</div>
+						
 					</div>
 					
+					</hgroup>
+				</header>
+				<br>
+				<br>
+				<div class="container">
+					
+					<div class="col-xs- col-sm- col-md- col-lg-12">
+						
+						<p>
+							<b>Ride Name</b>
+						</p>
+						
+					</div>
 				</div>
 				
-				</hgroup>
-			</header>
-			<br>
-			<br>
-			<div class="container">
-				
-				<div class="col-xs- col-sm- col-md- col-lg-12">
-					
-					<p>
-						<b>Ride Name</b>
-					</p>
-					
-				</div>
-			</div>
-			
-			<div class="container">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					
-					<input type="text" name="name" placeholder="introduce a ride name" id="name">
-					
-				</div>
-			</div>
-			<br>
-			
-			<br>
-			<br>
-			<br>
-			<div class="container">
-				
-				<div class="col-xs-12 col-sm-6 col-md-6	">
-					<button type="submit" class="btn btn-primary" id="btnSaveR">Eliminar</button>
-					
+				<div class="container">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						
+						<input type="text" name="name" placeholder="introduce a ride name" id="name">
+						
+					</div>
 				</div>
 				<br>
-			</div>
-			<br>
-			
-			<br>
-			<br>
-		</form>
+				
+				<br>
+				<br>
+				<br>
+				<div class="container">
+					
+					<div class="col-xs-12 col-sm-6 col-md-6	">
+						<button type="submit" class="btn btn-primary" id="btnSaveR">Eliminar</button>
+						
+					</div>
+					<br>
+				</div>
+				<div class="link">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<p>
+							<a href="<?php echo site_url('user');?>">Cancel</a>
+							
+						</p>
+					</div>
+				</div>
+				<br>
+				
+				<br>
+				<br>
+			</form>
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 			<!-- Latest compiled and minified JavaScript -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

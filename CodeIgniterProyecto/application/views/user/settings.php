@@ -7,8 +7,6 @@
 		<meta name="viewport" content="width=devive-width, user-scalable=no, initial-scale=1.0">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
 		<style type="text/css">
 		header{
 		background: #2c3e50;
@@ -51,98 +49,98 @@
 							<li><a href="<?php echo site_url('contact');?>">Contact</a></li>
 							<li><a href="<?php echo site_url('Settings');?>">Settings</a></li>
 							<li><a href="<?php echo site_url('login');?>">Login</a></li>
-							<li><a href="<?php echo site_url('register_user');?>">Sign in</a></li>	
+							<li><a href="<?php echo site_url('register_user');?>">Sign in</a></li>
 						</ul>
 					</div>
 				</nav>
 				<form action=<?php echo site_url('/user/editUser');?> method="POST" role="form">
-			</div>
-			<div class="container">
-				<div class="Title">
-					
-					<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-						<h1><b>Settings</b></h1>
+				</div>
+				<div class="container">
+					<div class="Title">
+						
+						<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+							<h1><b>Settings</b></h1>
+						</div>
+						
 					</div>
+				</div>
+				
+				</hgroup>
+			</header>
+			<br>
+			<div class="container">
+				<div class="fulltname">
 					
+					<div class="col-xs- col-sm- col-md- col-lg-12">
+						
+						<p>
+							<b>Full Name</b>
+						</p>
+						
+					</div>
 				</div>
 			</div>
 			
-			</hgroup>
-		</header>
-		<br>
-		<div class="container">
-			<div class="fulltname">
-				
-				<div class="col-xs- col-sm- col-md- col-lg-12">
-					
-					<p>
-						<b>Full Name</b>
-					</p>
-					
+			<div class="container">
+				<div class="fullnametxt">
+					<div class="col-xs-12 col-sm-6 col-md-12">
+						
+						<input type="text" name="fullname" placeholder="Introduce your Fullname" id="fullname">
+						
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="container">
-			<div class="fullnametxt">
-				<div class="col-xs-12 col-sm-6 col-md-12">
-					
-					<input type="text" name="fullname" placeholder="Introduce your Fullname" id="fullname">
-					
+			<br>
+			<div class="container">
+				<div class="speed">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<p>
+							<b>Speed Average	</b>
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="speed">
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<p>
-						<b>Speed Average	</b>
-					</p>
+			<div class="container">
+				<div class="speedtxt">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						
+						<input type="text" name="speed" placeholder="Introduce text" id="speed">
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="speedtxt">
-				<div class="col-xs-12 col-sm-6 col-md-3">
+			<br>
+			<div class="container">
+				<div class="About">
 					
-					<input type="text" name="speed" placeholder="Introduce text" id="speed">
+					<div class="col-xs- col-sm- col-md- col-lg-12">
+						
+						<div class="form-group">
+							<label for="comment">About Me:</label>
+							<textarea class="form-control" name="about" rows="5" id="comment"></textarea>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="About">
-				
-				<div class="col-xs- col-sm- col-md- col-lg-12">
-					
-					<div class="form-group">
-						<label for="comment">About Me:</label>
-						<textarea class="form-control" name="about" rows="5" id="comment"></textarea>
+			<div class="container">
+				<div class="link">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<p>
+							<a href="<?php echo site_url('user');?>">Cancel</a>
+							
+						</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="container">
+				<div class="boton">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<button type="submit" class="btn btn-primary" id="btnSaveSett">Save</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="link">
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<p>
-						<a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html">Cancel</a>
-						
-					</p>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="boton">
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<button type="submit" class="btn btn-primary" id="btnSaveSett">Save</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</form>
+	</form>
 	
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

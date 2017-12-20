@@ -66,6 +66,6 @@ $route['Settings']='user/settings';
 
 
 
-$route['default_controller'] = 'user/login';
+$route['default_controller'] = 'user/Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

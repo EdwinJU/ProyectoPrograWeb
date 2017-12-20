@@ -42,86 +42,86 @@
 							</div>
 							<ul class="nav navbar-nav">
 								<li><a href="<?php echo site_url('useer');?>">Home</a></li>
-							<li><a href="<?php echo site_url('user');?>">DashBoard</a></li>
-							<li><a href="<?php echo site_url('register_ride');?>">Register Ride</a></li>
-							<li><a href="<?php echo site_url('Prueba');?>">Edit Ride</a></li>
-							<li><a href="<?php echo site_url('Eliminar');?>">Eliminar Ride</a></li>
-							<li><a href="<?php echo site_url('healp');?>">Help</a></li>
-							<li><a href="<?php echo site_url('about');?>">About Us</a></li>
-							<li><a href="<?php echo site_url('contact');?>">Contact</a></li>
-							<li><a href="<?php echo site_url('Settings');?>">Settings</a></li>
-							<li><a href="<?php echo site_url('login');?>">Login</a></li>
-							<li><a href="<?php echo site_url('register_user');?>">Sign in</a></li>
+								<li><a href="<?php echo site_url('user');?>">DashBoard</a></li>
+								<li><a href="<?php echo site_url('register_ride');?>">Register Ride</a></li>
+								<li><a href="<?php echo site_url('Prueba');?>">Edit Ride</a></li>
+								<li><a href="<?php echo site_url('Eliminar');?>">Eliminar Ride</a></li>
+								<li><a href="<?php echo site_url('healp');?>">Help</a></li>
+								<li><a href="<?php echo site_url('about');?>">About Us</a></li>
+								<li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+								<li><a href="<?php echo site_url('Settings');?>">Settings</a></li>
+								<li><a href="<?php echo site_url('login');?>">Login</a></li>
+								<li><a href="<?php echo site_url('register_user');?>">Sign in</a></li>
 								
 							</ul>
 						</div>
 					</nav>
 					
 				</div>
-			</hgroup>
+				</hgroup>
 				<form action=<?php echo site_url('/user/authenticate');?> method="POST" role="form">
 					<form action=<?php echo site_url('/user/saveRide');?> method="POST" role="form">
+						
+					</header>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="container">
+						
+						<div class="col-xs- col-sm- col-md- col-lg-12">
+							
+							<p>
+								<b>Username</b>
+							</p>
+							
+						</div>
+						
+					</div>
 					
-			</header>
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="container">
-					
-					<div class="col-xs- col-sm- col-md- col-lg-12">
-						
-						<p>
-							<b>Username</b>
-						</p>
-						
+					<div class="container">
+						<div class="col-xs-12 col-sm-6 col-md-12">
+							
+							<input type="text" name="username" value="" placeholder="Type your username" class="required"  id="username" />
+							
+						</div>
 					</div>
-					
-				</div>
-				
-				<div class="container">
-					<div class="col-xs-12 col-sm-6 col-md-12">
-						
-						<input type="text" name="username" value="" placeholder="Type your username" class="required"  id="username" />
-						
-					</div>
-				</div>
-				<div class="container">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<p>
-							<b>Password</b>
-						</p>
-					</div>
-				</div>
-				<div class="container">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						
-						<input type="password" name="password" id="password" />
-					</div>
-				</div>
-				
-				<br>
-				<div class="container">
-					<div class="link">
+					<div class="container">
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<p>
-								Not an user <a href="<?php echo site_url('register_user');?>">Register here</a>
-																
+								<b>Password</b>
 							</p>
 						</div>
 					</div>
-				</div>
-				<br>
-				<div class="container">
-					<div class="boton">
+					<div class="container">
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							
-							<button type="submit" class="btn btn-primary" id="btnlog">Login</button>
+							<input type="password" name="password" id="password" />
 						</div>
 					</div>
-				</div>
+					
+					<br>
+					<div class="container">
+						<div class="link">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<p>
+									Not an user <a href="<?php echo site_url('register_user');?>">Register here</a>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="container">
+						<div class="boton">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								
+								<button type="submit" class="btn btn-primary" id="btnlog">Login</button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</form>
-		</form>
 			
 			
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

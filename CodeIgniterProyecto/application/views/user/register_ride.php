@@ -170,7 +170,7 @@
 					<div class="link">
 						<div class="col-xs-12 col-sm-6 col-md-6">
 							<p>
-								<a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html">Cancel</a>
+								<a href="<?php echo site_url('user');?>">Cancel</a>
 								
 							</p>
 						</div>

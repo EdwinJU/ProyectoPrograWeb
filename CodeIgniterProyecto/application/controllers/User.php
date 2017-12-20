@@ -20,6 +20,10 @@ class User extends CI_Controller
     {
         $this->load->view('user/login');
     }
+    public function Home()
+    {
+        $this->load->view('user/Home');
+    }
 
     public function register_user()
     {
@@ -66,7 +70,7 @@ class User extends CI_Controller
             echo "Welcome {$user->username}";
             $s_user=array('s_username'=>$username);
             $this->session->set_userdata($s_user);
-			redirect('register_ride');
+			redirect('user');
 		} else {
 			echo "Invalid user name or password";
 		}
@@ -156,7 +160,7 @@ class User extends CI_Controller
         // redirect
         if ($r) {
             // $this->session->set_flashdata('message', 'User saved');
-            redirect('login');
+            redirect('user');
         } else {
             // $this->session->set_flashdata('message', 'There was an error saving the user');
             redirect('user/register_ride');
