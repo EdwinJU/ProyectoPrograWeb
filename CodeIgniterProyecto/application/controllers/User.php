@@ -9,8 +9,6 @@ class User extends CI_Controller
     //    $this->load->view('user/dashboard');
     //}
 
-
-
    //public function index(){
 
      //   $this->load->view('user/dashboard');
@@ -132,7 +130,7 @@ class User extends CI_Controller
     public function saveRide()
     {
         // get the params
-        $user_create=$this->session->userdata('s_username');
+        $user_create = $this->session->userdata('s_username');
         $name = $this->input->post('name');
         $start = $this->input->post('start');
         $end = $this->input->post('end');
